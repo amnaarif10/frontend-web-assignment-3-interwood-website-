@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office Furniture</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #header {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            background-color: white;
+            color: black;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            padding: 10px 20px;
+        }
+
+        .main-header {
+            width: 100%;
+            background-color: #ffffff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+            font-family: 'Inter', Arial, sans-serif;
+        }
+
+
+        .top-bar {
+            background-color: #2d3b2d;
+            color: #ffffff;
+            text-align: center;
+            padding: 6px 15px;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 0px;
+            margin: 0;
+        }
+
+        .logo {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-heading {
+            padding-left: 2px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 30px;
+        }
+
+        .logo img {
+            height: 100px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            gap: 45px;
+            margin: 0px;
+            flex-wrap: wrap;
+        }
+
+        .menu li {
+            padding: 0px;
+            border: 4px;
+
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: white;
+            padding: 4px 8px;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline-block;
+        }
+
+        .menu a:hover {
+            background-color: black;
+            color: white;
+        }
+
+
+        #office {
+            width: 100%;
+            height: auto;
+        }
+
+        .office-bg {
+            margin-top: 0px;
+        }
+
+        .office-main {
+            margin-top: 15px 15px;
+        }
+
+        .office-main-heading {
+            text-align: center;
+            padding-top: 75px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 4px;
+            font-size: 40px;
+            color: rgb(2, 59, 2);
+        }
+
+        .office-main-para {
+            padding-top: 0px;
+            text-align: center;
+            font-size: 22px;
+            color: rgb(2, 59, 2);
+
+        }
+
+        .picture-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 80px;
+        }
+
+
+        .card-img {
+            flex: 1;
+        }
+
+        .card-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+
+
+        .content {
+            flex: 1;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 35px;
+            color: rgb(2, 59, 2);
+            ;
+            margin-bottom: 15px;
+            font-weight: 600;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .content p {
+            font-size: 25px;
+            color: #555555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .logo-container a {
+            color: black;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .feature-card {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div header class="main-header">
+
+            <div class="top-bar">
+                <span>Free Delivery Across Pakistan on Orders Over PKR 50,000</span>
+            </div>
+        </div>
+        <div class="logo-container">
+            <div class="logo"><a href="index.html"><img src="logo.jpeg" alt="" width="130px" height="150px"></div>
+            <h4 class="logo-heading">INTERWOOD</h4></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="office.html">Office</a></li>
+                <li><a href="kitchen.html">Kitchen</a></li>
+                <li><a href="doors.html">Doors</a></li>
+                <li><a href="wardrobe.html">Wardrobe</a></li>
+                <li><a href="decor.html">Decor</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="office">
+        <div class="office-bg">
+            <img src="office banner.jpeg" alt="" width="100%" height="600px">
+        </div>
+        <div class="office-main">
+            <h1 class="office-main-heading">Create a workspace that works for you.</h1>
+            <p class="office-main-para">Explore smart, stylish furniture for every role, every routine.</p>
+            <div class="picture-card">
+                <div class="card-img">
+                    <img src="off 1.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h2>Exclusive Sets</h2>
+                    <p>Make a lasting impression with our premium executive collections. From Omega to Callisto —
+                        discover curated office sets that blend authority, elegance, and innovation.</p>
+                </div>
+            </div>
+            <div class="picture-card">
+                <div class="card-img">
+                    <img src="off 7.webp" alt="">
+                </div>
+                <div class="content">
+                    <h2>Seating</h2>
+                    <p>Comfort that keeps you productive. Discover sleek office sofas for lounges, waiting areas, or a
+                        polished executive touch.</p>
+                </div>
+            </div>
+
+
+            <div class="picture-card">
+                <div class="card-img">
+                    <img src="off 6.webp" alt="">
+                </div>
+                <div class="content">
+                    <h2>Workstations</h2>
+                    <p>Tailored designs for teams that think ahead. Choose from Ozone, Ariel, Lunar, Triton, and Budget
+                        Pro — modern modular systems for every work style.</p>
+                </div>
+            </div>
+
+            <div class="picture-card">
+                <div class="card-img">
+                    <img src="off 5.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h2>Office Tables</h2>
+                    <p>From managerial command centers to sleek meeting tables, every surface matters. Explore manager
+                        tables, executive desks, side racks, center tables, and more — designed to enhance both
+                        aesthetics and function.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="picture-card">
+                <div class="card-img">
+                    <img src="off 4.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h2>Office Chairs</h2>
+                    <p>.Support your workday with comfort that lasts. Discover manager chairs, visitor seating, and
+                        ergonomic designs — made to move with you, from boardroom to break time.</p>
+                </div>
+            </div>
+
+            <div class="picture-card">
+                <div class="card-img">
+                    <img src="off 3.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h2>Co-Working Space</h2>
+                    <p>Built for agile teams and creative minds. From stools and chairs to private phone pods — create
+                        spaces that adapt to the way you work.</p>
+                </div>
+            </div>
+
+            <div class="picture-card">
+                <div class="card-img">
+                    <img src="off 2.webp" alt="">
+                </div>
+                <div class="content">
+                    <h2>Storage</h2>
+                    <p>Declutter your office without compromising on style. Choose from credenzas, filing cabinets, and
+                        drawer pedestals — crafted to keep your workspace organized and efficient..</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer-container">
+            <div class="footer-card">
+                <h3 class="footer-heading">INFORMATION</h3>
+                <ul class="footer-list">
+                    <li>About us</li>
+                    <li>Store Locator</li>
+                    <li>Product Catalogues</li>
+                    <li>Blog</li>
+                    <li>Payments</li>
+                    <li>Shipping</li>
+                    <li>Authorized Dealers</li>
+                    <li>Careers</li>
+                    <li>Terms of Offers for Sale</li>
+                    <li>Terms of Use</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="footer-card">
+                <h3 class="footer-heading">USER AREA</h3>
+                <ul class="footer-list">
+                    <li>Corporate</li>
+                    <li>Corporate Form</li>
+                    <li>Contact Us</li>
+                    <li>Information/Lead Form</li>
+                    <li>Rewards</li>
+                    <li>Loyalty Form</li>
+                    <li>Customer service</li>
+                    <li>Track my ticket</li>
+                </ul>
+            </div>
+            <div class="footer-card">
+                <h3 class="footer-heading">CONTACT INFO</h3>
+                <p class="contact-text">+92-42-111-203-203</p>
+                <p class="contact-text"><a href="mailto:complaints@interwoodmobel.com">complaints@interwoodmobel.com</a>
+                </p>
+            </div>
+            <div class="footer-card">
+                <h3 class="footer-heading">Follow US</h3>
+                <h4 class="newsletter-title">JOIN OUR MAILING LIST</h4>
+                <p class="newsletter-desc">
+                    Subscribe to our newsletter to get the latest product updates directly to your email.
+                </p>
+
+                <form class="newsletter-form">
+                    <label for="email-input">Email</label>
+                    <input type="email" id="email-input" placeholder="Enter your mail address" required>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="section">
+        <dl class="section-dl">
+            <dt class="section-dt">USEFUL FURNITURE CATEGORIES</dt>
+            <dd class="section-dd">Dressing Tables , Bed Sets , Double Bed Set , Queen Size Beds , Bedsides , Bedroom
+                Chairs , CEO Chairs ,
+                Wall Mirrors , Sofas , Sofa Set , 1 Seater Sofa , 2 Seater Sofa , 3 Seater Sofa , L Shaped Sofa ,
+                Ottomans , Benches , Recliners , Sofa Cum Bed , Kids Wardrobe , Flooring , Stools , Kids Furniture ,
+                Bunk Beds , Single Beds , Vases & Bowls , Accent Tables , Lamps And Lighting , Paintings , Study Chairs
+                , Study Tables , Flowers , Office Chair , Bar Stools , Dining Chairs , Occassional Chairs , Rocking
+                Chairs , Outdoor Furniture , Wall Clock , Bookshelves , Tables , Dining Tables , Dining Table Set ,
+                Coffee Tables , Nested Tables , Computer Tables , TV Units</dd>
+        </dl>
+        <dl class="section-dl">
+            <dt class="section-dt">SHOP FURNITURE BY ROOM</dt>
+            <dd class="section-dd">Living Room Furniture , Bedroom Furniture , Dinning Furniture , Study Furniture ,
+                Office Furniture ,
+                Kids Furniture</dd>
+        </dl>
+        <dl class="section-dl">
+            <dt class="section-dt">OFFICE FURNITURE CATEGORIES</dt>
+            <dd class="section-dd">Office Tables , Manager Tables , Executive Tables , Workstations , Reception Counters
+                , Meeting Tables ,
+                Office Chairs , CEO Chairs , High Back Chairs , Ergonomic Chairs , Cafe Chairs , Office Sofas , Office
+                Sofa Set , Office Executive Furniture</dd>
+        </dl>
+        <dl class="section-dl">
+            <dt class="section-dt">WARDROBES & KITCHEN DESIGNS
+            </dt>
+            <dd class="section-dd">Kitchen Design , Kitchen Cabinets , Small Kitchen Design , Kitchen Accessories ,
+                Kitchen Sink , Kitchen
+                Hood , Wardrobe Design , Built-in wardrobes , Sliding Wardrobes</dd>
+        </dl>
+    </div>
+</body>
+
+</html>
